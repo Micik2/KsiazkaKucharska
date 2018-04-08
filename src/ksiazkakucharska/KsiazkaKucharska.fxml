@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ksiazkakucharska.KsiazkaKucharskaController">
+  <children>
+    <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Pane prefHeight="48.0" prefWidth="800.0" visible="true">
+          <children>
+            <AnchorPane layoutX="0.0" layoutY="0.0" minHeight="48.0" prefHeight="48.0" prefWidth="812.0">
+              <children>
+                <Label layoutX="14.0" layoutY="11.0" text="Książka kucharska">
+                  <font>
+                    <Font name="System Bold" size="20.0" />
+                  </font>
+                </Label><Label fx:id="statystyki" layoutX="229.0" layoutY="9.0" prefHeight="30.0" prefWidth="190.0">
+<font>
+<Font size="20.0" />
+</font></Label><Label fx:id="dane" layoutX="452.0" layoutY="14.0" prefHeight="25.0" prefWidth="307.0" />
+              </children>
+            </AnchorPane>
+          </children>
+        </Pane>
+        <SplitPane dividerPositions="0.2580246913580247, 0.6777777777777778" focusTraversable="true" prefHeight="550.0" prefWidth="812.0" VBox.vgrow="ALWAYS">
+          <items>
+            <AnchorPane prefHeight="548.0" prefWidth="239.0">
+              <children>
+                <ListView fx:id="przepisyListView" prefHeight="496.0" prefWidth="206.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Button fx:id="przyciskDodajPrzepis" layoutX="-8.0" layoutY="509.0" mnemonicParsing="false" text="Dodaj przepis" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" /><Button fx:id="przyciskUsunPrzepis" layoutX="107.0" layoutY="509.0" mnemonicParsing="false" text="Usuń przepis" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="107.0" />
+              </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+              <children>
+                <WebView fx:id="przepisWebView" prefWidth="624.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+              </children>
+            </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="przepisySzukajListView" prefHeight="548.0" prefWidth="402.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                <TextField fx:id="szukajPoleTekstowe" layoutX="44.0" layoutY="509.0" prefHeight="25.0" prefWidth="247.0" promptText="Szukaj" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+          </items>
+        </SplitPane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
